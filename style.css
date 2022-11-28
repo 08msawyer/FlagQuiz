@@ -13,3 +13,25 @@ html, body {
     -webkit-box-shadow: 9px 9px 15px 5px rgba(0,0,0,0.33);
     box-shadow: 9px 9px 15px 5px rgba(0,0,0,0.33);
 }
+
+ul.list, ol.list {
+    list-style-position: inside;
+    list-style-type: none;
+    padding: 0;
+}
+
+ol.list {
+    counter-reset: number;
+}
+
+.list > li {
+    counter-increment: number;
+}
+
+ul.list > li::before {
+    content: '• ';
+}
+
+ol.list > li::before {
+    content: counter(number)'. ';
+}
