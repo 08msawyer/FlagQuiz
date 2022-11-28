@@ -1,6 +1,13 @@
 html, body {
     height: 100%;
     width: 100%;
+    background-color: white;
+    border-color: pink;
+    border-style: none;
+    border-width: 0;
+    color: #212529FF;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
 }
 
 #main {
